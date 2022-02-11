@@ -26,7 +26,7 @@ router = routers.DefaultRouter()
 router.register(
     'redevaregista', RedeVaregistaViewSet, base_name='RedeVaregista')
 
-# router.register('customer', )
+router.register('customer', )
 
 urlpatterns = [
     path('admin/', admin.site.urls),
