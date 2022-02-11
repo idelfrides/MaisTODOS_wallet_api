@@ -5,4 +5,4 @@ class RedeVaregistaSerializer(ModelSerializer):
 
     class Meta:
         model = RedeVaregista
-        fields = ['id', 'name', 'sold_at', 'total']
+        fields = ['id', 'name', 'sold_at', 'total', 'customer']
