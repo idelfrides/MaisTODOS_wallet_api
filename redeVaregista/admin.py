@@ -1,3 +1,6 @@
 from django.contrib import admin
+from redeVaregista.models import RedeVaregista
 
-# Register your models here.
+
+# models registration
+admin.site.register(RedeVaregista)
