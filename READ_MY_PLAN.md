@@ -2,11 +2,13 @@
 
     DAY: 2022-02-11 (FRIDAY)
 
-    1 -> Create a general action plan  |  **DONE**
-    2 -> Create a UML diagram   |  **DONE**
-    3 -> Discribe development action plan wathing to UML diagram **DONE**
-    4 -> Create a repository on Github
-    5 -> Start development based on the plan created at step 3
+    1 -> Create a general action plan | DONE
+    2 -> Create a UML diagram  | DONE
+    3 -> Discribe development action plan wathing to UML diagram | DONE
+    4 -> Create a repository on Github  | DONE
+    5 -> Start development based on the plan created at step 3 | DONE
+        EXECUTE:
+            1. Develop entity 'Rede varegista'
 
     -----
 
