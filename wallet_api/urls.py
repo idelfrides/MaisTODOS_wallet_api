@@ -19,14 +19,14 @@ from django.urls import include
 from django.urls import path
 from rest_framework import routers
 from redeVaregista.api.viewsets import RedeVaregistaViewSet
+from customer.api.viewsets import CustomerViewSet
 from rest_framework.authtoken.views import obtain_auth_token
 
 router = routers.DefaultRouter()
 
 router.register(
     'redevaregista', RedeVaregistaViewSet, base_name='RedeVaregista')
-
-router.register('customer', )
+router.register('customer', CustomerViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
