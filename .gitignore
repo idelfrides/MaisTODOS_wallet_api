@@ -2,6 +2,7 @@
 login_data.text
 pkg-resources==0.2.2
 ENV/
+VENV/
 env
 env/
 __pycache__/
