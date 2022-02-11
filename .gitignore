@@ -1,0 +1,7 @@
+*.pyc
+login_data.text
+pkg-resources==0.2.2
+ENV/
+env
+env/
+__pycache__/
