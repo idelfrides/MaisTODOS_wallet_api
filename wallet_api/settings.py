@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'redeVaregista',
+    'customer',
     'rest_framework',
     'rest_framework.authtoken',
+    'cpf_field',
 ]
 
 MIDDLEWARE = [
