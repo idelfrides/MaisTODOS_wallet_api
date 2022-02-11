@@ -8,3 +8,4 @@ env/
 __pycache__/
 access_data.text
 db.walletapi
+migrations/
