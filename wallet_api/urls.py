@@ -21,7 +21,6 @@ from rest_framework import routers
 from redeVaregista.api.viewsets import RedeVaregistaViewSet
 from customer.api.viewsets import CustomerViewSet
 from rest_framework.authtoken.views import obtain_auth_token
-
 router = routers.DefaultRouter()
 
 router.register(
