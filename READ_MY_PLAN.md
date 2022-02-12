@@ -16,7 +16,11 @@
     DAY: 2022-02-12 (SATURDAY)
 
     1 -> CONTINUATION Of development
+        EXECUTE:
+            3. Develop entity 'Products'
+
     2 -> Finish the API
+
 
     ----------
 
@@ -28,4 +32,4 @@
 
     1. Develop entity 'Rede varegista'
     2. Develop entity 'Customer'
-    1. Develop entity 'Products'
+    3. Develop entity 'Products'
