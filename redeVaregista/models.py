@@ -15,11 +15,21 @@ class RedeVaregista(models.Model):
         verbose_name='Data de venda',
         null=False
     )
-    customer = models.ManyToManyField(Customer)
-    product = models.ManyToManyField(Products)
+
+    # customer = models.ManyToManyField(Customer)
+    # product = models.ManyToManyField(Products)
+
+    customer = models.ForeignKey(
+        Customer,
+        on_delete=models.CASCADE,
+        blank=True, null=True
+    )
+
+    product = models.ManyToManyField(
+        Products
+    )
 
     # TODO: make all content of a customer to appear  when call get  redevaregista
-
 
     def __str__(self):
         return self.name
