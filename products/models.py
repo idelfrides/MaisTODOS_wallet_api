@@ -31,7 +31,7 @@ class Products(models.Model):
         blank=False,
         null=False,
         decimal_places=2,
-        max_digits=5
+        max_digits=7
     )
 
     quantity = models.IntegerField(
