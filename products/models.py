@@ -12,11 +12,14 @@ PRODUCT_CHOICE = [
 -----------------
 Discontos:
 -----------------
-Diamante: 3%
-Ouro: 2%
-
+Diamante: 5%
+Ouro: 3%
 '''
 
+DISCOUNT = {
+    'diamante': 5,
+    'ouro': 3
+}
 
 class Products(models.Model):
 
