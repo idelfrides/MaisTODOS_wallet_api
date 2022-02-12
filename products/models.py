@@ -17,7 +17,8 @@ ouro: 2%
 
 class Products(models.Model):
     product_type = models.CharField(
-        verbose_name='Tipo do produto', choices=PRODUCT_CHOICE
+        verbose_name='Tipo do produto', choices=PRODUCT_CHOICE,
+        max_length=150
     )
 
     value = models.IntegerField(
