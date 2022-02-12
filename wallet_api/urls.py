@@ -26,9 +26,9 @@ from rest_framework.authtoken.views import obtain_auth_token
 router = routers.DefaultRouter()
 
 router.register(
-    'redevaregista', RedeVaregistaViewSet, base_name='RedeVaregista')
-router.register('customer', CustomerViewSet)
-router.register('product', ProductViewSet)
+    'wallet/api/cashback', RedeVaregistaViewSet, base_name='RedeVaregista')
+router.register('wallet/api/customer', CustomerViewSet)
+router.register('wallet/api/product', ProductViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
