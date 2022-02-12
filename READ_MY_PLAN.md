@@ -17,7 +17,7 @@
 
     1 -> CONTINUATION Of development
         EXECUTE:
-            3. Develop entity 'Products'
+            3. Develop entity 'Products'        | DONE
 
     2 -> Finish the API
 
@@ -26,7 +26,7 @@
 
     DAY: 2022-02-13 (SUNDAY)
 
-    1 -> Make correction needs to get the API end
+    1 -> Make correction needs to get the API REAL DONE
 
 ## DEVELOPMENT ACTION PLAN
 
