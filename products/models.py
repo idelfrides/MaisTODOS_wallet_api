@@ -7,25 +7,31 @@ PRODUCT_CHOICE = [
     ('OURO', 'Ouro'),
 ]
 
-'''
-discontos :
 
-diamante: 3%
-ouro: 2%
+'''
+-----------------
+Discontos:
+-----------------
+Diamante: 3%
+Ouro: 2%
+
 '''
 
 
 class Products(models.Model):
+
     product_type = models.CharField(
         verbose_name='Tipo do produto',
         choices=PRODUCT_CHOICE,
         max_length=150
     )
 
-    value = models.IntegerField(
+    value = models.DecimalField(
         verbose_name='Valor do produto',
         blank=False,
-        null=False
+        null=False,
+        decimal_places=2,
+        max_digits=5
     )
 
     quantity = models.IntegerField(
