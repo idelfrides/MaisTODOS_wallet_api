@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 PRODUCT_CHOICE = [
     ('DIAMANTE', 'Diamante'),
@@ -15,11 +14,6 @@ Discontos:
 Diamante: 5%
 Ouro: 3%
 '''
-
-DISCOUNT = {
-    'diamante': 5,
-    'ouro': 3
-}
 
 class Products(models.Model):
 
@@ -42,6 +36,14 @@ class Products(models.Model):
         blank=False,
         null=False
     )
+
+    productCode = models.CharField(
+        verbose_name='Código do produto',
+        max_length=150,
+        help_text='Códico do produto deve ser único',
+        unique=True
+    )
+
 
     def __str__(self):
         return self.product_type

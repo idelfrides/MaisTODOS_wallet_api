@@ -4,7 +4,7 @@ from .models import Products
 
 class ProductModelAdmin(admin.ModelAdmin):
 
-    list_display = ['product_type', 'value', 'quantity']
+    list_display = ['product_type', 'value', 'quantity', 'productCode']
     list_display_links = ['product_type']
     list_filter = ['quantity', 'value']
     list_editable = ['value', 'quantity']
