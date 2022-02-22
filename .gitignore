@@ -9,3 +9,6 @@ __pycache__/
 access_data.text
 db.walletapi
 migrations/
+help_me.text
+.gitignore
+db.walletapi
