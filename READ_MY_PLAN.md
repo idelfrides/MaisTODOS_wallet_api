@@ -27,9 +27,22 @@
     DAY: 2022-02-13 (SUNDAY)
 
     1 -> Make correction needs to get the API REAL DONE
+    --> I AM GONNA NEED MORE TRHEE DAYS
+
+
+    DAY: 2022-02-22 (TUESDAY)
+
+    1 -> create logic to receive POST request,
+    make operations ncessary then make POST request to wallet API   | DONE
+    with correct values
+
+
+    DAY: 2022-02-25 (FRIDAY)
+
+    1 -> create a model to store wallert API response | ...
 
 ## DEVELOPMENT ACTION PLAN
 
-    1. Develop entity 'Rede varegista'
-    2. Develop entity 'Customer'
-    3. Develop entity 'Products'
+    1. Develop entity 'Rede varegista'       | DONE
+    2. Develop entity 'Customer'             | DONE
+    3. Develop entity 'Products'             | DONE
