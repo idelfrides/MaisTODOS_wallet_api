@@ -11,7 +11,7 @@
             1. Develop entity 'Rede varegista'  | DONE
             2. Develop entity 'Customer'        | DONE
 
-    ----------
+    ------------
 
     DAY: 2022-02-12 (SATURDAY)
 
@@ -22,7 +22,7 @@
     2 -> Finish the API
 
 
-    ----------
+    -------------
 
     DAY: 2022-02-13 (SUNDAY)
 
@@ -36,10 +36,18 @@
     make operations ncessary then make POST request to wallet API   | DONE
     with correct values
 
+    -------------
+
+    DAY: 2022-02-23 (WEDNESDAY)
+
+    1 -> organize API structure                  | DONE
+
+    -------------
 
     DAY: 2022-02-25 (FRIDAY)
 
-    1 -> create a model to store wallert API response | ...
+    1 -> create a model to store mockapi.io API response | ...
+
 
 ## DEVELOPMENT ACTION PLAN
 
