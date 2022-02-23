@@ -40,14 +40,15 @@ class RedeVaregistaViewSet(ModelViewSet):
         if str(customer_id).isnumeric():
             request.data['customer']  = customer_id
         else:
-            return customer_id
+            return  Response({'Response': customer_id})
 
         result_code, product_list, type_value_product_list = (
             self.product_validation(request.data)
         )
 
         if result_code == 404:
-            return product_list[len(product_list)-1]
+            result = product_list[len(product_list)-1]
+            return Response({'Response': result})
         else:
             request.data['product'] = product_list
 
