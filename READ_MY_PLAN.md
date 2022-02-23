@@ -1,3 +1,5 @@
+
+
 ## GENERAL ACTION PLAN
 
     DAY: 2022-02-11 (FRIDAY)
@@ -11,7 +13,9 @@
             1. Develop entity 'Rede varegista'  | DONE
             2. Develop entity 'Customer'        | DONE
 
-    ------------
+
+
+## DEVELOPMENT ACTION PLAN
 
     DAY: 2022-02-12 (SATURDAY)
 
@@ -20,7 +24,6 @@
             3. Develop entity 'Products'        | DONE
 
     2 -> Finish the API
-
 
     -------------
 
@@ -48,10 +51,3 @@
 
     1 -> create a model to store mockapi.io API response | ...
     2 -> write how to use this API on README.md file
-
-
-## DEVELOPMENT ACTION PLAN
-
-    1. Develop entity 'Rede varegista'       | DONE
-    2. Develop entity 'Customer'             | DONE
-    3. Develop entity 'Products'             | DONE
