@@ -1,7 +1,7 @@
 
 
 import uuid
-# from customer.models import Customer
+from customer.models import Customer
 
 def generate_uuid(parts=''):
     # import pdb; pdb.set_trace()
@@ -38,12 +38,18 @@ def generate_product_code():
 
 '''
 
-def customer_validation(request_data):
-    import pdb; pdb.set_trace()
 
-    # customers = Customer.objects.all()
+def customer_validation(cpf):
 
-    pass
+    try:
+        customer = Customer.objects.get(cpf=cpf)
+        result_ = customer.id
+    except Exception as err:
+        result_ = f'INFORMED CUSTOMER/CPF -> {cpf} DO NOT EXISTS.'
+        print(result_)
+        print(f'\n\n API RETURNED:  -> {err}')
+
+    return result_
 
 
 def product_validation():
