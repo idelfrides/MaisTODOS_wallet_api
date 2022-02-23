@@ -13,7 +13,7 @@ from utils_folder.lib_manager_api import (
     product_validation,
     calculate_discount
 )
-from views import make_request
+from redeVaregista.views import make_request
 
 
 
@@ -28,7 +28,7 @@ class RedeVaregistaViewSet(ModelViewSet):
     permission_classes = (IsAuthenticated, )
     authentication_classes = (TokenAuthentication, )
 
-    @action(methods=['POST', 'OPTIONS'], detail=False)
+    @action(methods=['POST'], detail=False)
     def cashback(self, request, *args, **kwarg):
 
         content_to_request = {}
@@ -52,13 +52,13 @@ class RedeVaregistaViewSet(ModelViewSet):
         else:
             request.data['product'] = product_list
 
-        result_data = super().create(request, args, kwarg)
-
         discount_result = calculate_discount(type_value_product_list)
 
         content_to_request['cpf'] = cpf
         content_to_request['cashback'] = discount_result
 
         cashback_result = make_request(content_to_request)
+
+        result_data = super().create(request, args, kwarg)
 
         return Response(cashback_result[1])

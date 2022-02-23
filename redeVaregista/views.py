@@ -4,7 +4,7 @@ import requests
 # Create your views here.
 
 
-def make_request(self, request_data):
+def make_request(request_data):
     url = 'https://5efb30ac80d8170016f7613d.mockapi.io/api/mock/Cashback'
 
     data_content = {
