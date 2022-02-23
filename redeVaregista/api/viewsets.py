@@ -8,7 +8,9 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from utils_folder.lib_manager_api import customer_validation
+from utils_folder.lib_manager_api import (
+    customer_validation
+)
 import requests
 
 
@@ -34,7 +36,7 @@ class RedeVaregistaViewSet(ModelViewSet):
         content_to_request = {}
         cpf = request.data.get('customer', {})['document']
 
-        customer_id = self.customer_validation(cpf)
+        customer_id = customer_validation(cpf)
         if str(customer_id).isnumeric():
             request.data['customer']  = customer_id
         else:
