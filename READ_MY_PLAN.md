@@ -47,6 +47,7 @@
     DAY: 2022-02-25 (FRIDAY)
 
     1 -> create a model to store mockapi.io API response | ...
+    2 -> write how to use this API on README.md file
 
 
 ## DEVELOPMENT ACTION PLAN
