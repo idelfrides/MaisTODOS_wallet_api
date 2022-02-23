@@ -2,41 +2,14 @@
 
 import uuid
 from customer.models import Customer
-
-def generate_uuid(parts=''):
-    # import pdb; pdb.set_trace()
-
-    assert str(parts).isnumeric, 'PARAMETER parts MUST BE A NUMBER'
-
-    the_uuid = uuid.uuid4()
-    # code_help = str(the_uuid).split('-')
-    # uuid_code = (
-    #     code_help[0][:parts] + code_help[1][:parts] + code_help[2][:parts] + code_help[3][:parts] + code_help[4][:parts]
-    # )
-
-    return 'C:' + str(the_uuid)
-    # return 'C:' + uuid_code
+from products.models import Products
 
 
-'''
-def generate_product_code():
-    import pdb; pdb.set_trace()
 
-    # hd_obj = HoldData()
-
-    # assert eric, 'PARAMETER parts MUST BE A NUMBER'
-
-    n = product.id
-    # order_number = hd_obj.get_hold_value()
-    order_number += 1
-
-    code = f'Product:{order_number}'
-
-    # hd_obj.set_hold_value(order_number)
-
-    return code
-
-'''
+DISCOUNT = {
+    'DIAMANTE': 5,
+    'OURO': 3
+}
 
 
 def customer_validation(cpf):
@@ -52,22 +25,47 @@ def customer_validation(cpf):
     return result_
 
 
-def product_validation():
-    pass
+def product_validation(request_data):
+
+    products_list = []
+    type_value_product_list = []
+    type_value_dict = {}
+    result_code = 200
+
+    all_product_code = request_data.get('product')
+
+    for prod_dict in all_product_code:
+        product_code = prod_dict.get('productCode', {})
+
+        try:
+            product = Products.objects.get(productCode=product_code)
+            result_ = 200
+        except Exception as err:
+            result_ = f'PRODUCT CODE -> {product_code} DO NOT EXISTS.'
+            print(result_)
+            print(f'\n\n API RETURNED:  -> {err}')
+
+        if result_ == 200:
+            products_list.append(product.id)
+            type_value_dict[str(product.product_type)] = product.value
+            type_value_product_list.append(type_value_dict)
+        else:
+            products_list.append(result_)
+            result_code = 404
+            break
+
+    return result_code, products_list, type_value_product_list
 
 
-class HoldData(object):
+def calculate_discount(type_value_product_list):
+    total_discount_value = 0
 
-    def __init__(self, value):
-        # pass
-        self.__hold_value = value
+    for product in type_value_product_list:
+        for key, prod_value in product.items():
 
+            discount = DISCOUNT.get(key, 0)
+            discount_value  =  (float(prod_value) * (discount/100))
 
-    # GETTER
-    def get_hold_value(self):
-        return self.__hold_value
+            total_discount_value += discount_value
 
-
-    # SETTER
-    def set_hold_value(self, in_value):
-        self.__hold_value = in_value
+    return total_discount_value
