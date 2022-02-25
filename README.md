@@ -79,7 +79,7 @@ If you are using fish, write
       Content-Type: application/json
     }
 
-### 10 | At this point you are able to create customers and products. You can do it via django Admin or by performing a POST reques using INSOMNIA as I Do.
+### 10 | At this point you are able to create customers and products. You can do it via django Admin or by performing a POST reques using INSOMNIA as I Do. Also, you can use browseble API of django REST framework.
 
     BY REQUEST ON CUSTOMER:
 
