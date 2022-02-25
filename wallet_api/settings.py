@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'redeVaregista',
     'customer',
     'products',
+    'mockapi',
     'rest_framework',
     'rest_framework.authtoken',
     'cpf_field',
