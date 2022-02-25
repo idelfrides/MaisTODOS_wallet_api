@@ -28,7 +28,7 @@ If you are using fish, write
 
      pip install -r requirements.txt
 
-### 5 | Migrate the models to creata tables
+### 5 | Migrate the models to create tables
 
      python manage.py migrate
 
@@ -42,15 +42,15 @@ If you are using fish, write
 
 ### 8 | Now you gonna need to make authentication by some  client as INSOMNIA OR POSTMANT
 
-  Use endpoint: http://127.0.0.1:8000/api-token-auth/
-  Method: POST
-  Body:
-  {
-    "username": "YOUR_USERNAME',
-    "password": "YOUR_PASSWORD'
-  }
+    Use endpoint: http://127.0.0.1:8000/api-token-auth/
+    Method: POST
+    Body:
+    {
+      "username": "YOUR_USERNAME',
+      "password": "YOUR_PASSWORD'
+    }
 
-  The response will be a TOKEN of your permission to make requests to this API. Copy it.
+    The response will be a TOKEN of your permission to make requests to this API. Copy it.
 
 ### 9 | Use the token you got in Header to performe request, like this
 
