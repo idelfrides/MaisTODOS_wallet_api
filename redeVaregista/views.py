@@ -29,7 +29,7 @@ def make_request(request_data):
         createdAt=content_payload['createdAt'],
         cashback=content_payload['cashback'],
         message=content_payload['message'],
-        id_legacy=content_payload['id_legacy']
+        id_legacy=content_payload['id']
     )
 
     new_caskback.save()
