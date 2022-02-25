@@ -96,23 +96,23 @@ If you are using fish, write
      - Body:
 
         {
-		      "name": "teste com dados deles insomnia 9",
-          "sold_at": "2022-02-25 07:00:00",
-          "customer": {
+	   "name": "teste com dados deles insomnia 9",
+           "sold_at": "2022-02-25 07:00:00",
+           "customer": {
              "document": "027.419.227-64",
              "name": "SEMEAO"
-          },
-          "total": "108",
-          "product": [
-            {
+           },
+           "total": "108",
+           "product": [
+             {
                 "productCode": "96321"
-            },
-		      	{
-		      		 "productCode": "9874"
-		      	},
-		      	{
-		      		"productCode": "987478"
-		      	}
+             },
+             {
+	        "productCode": "9874"
+	     },
+             {
+	        "productCode": "987478"
+	     }
           ]
         }
 
