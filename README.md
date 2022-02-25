@@ -2,6 +2,24 @@
 
 This is the technical challenge for join MaisTODOS company as a Dev. It consist in build a intermediate API to calculate cashback.
 
+## EXPLICAÇÃO DAS DECISÕES
+
+  Usei Django REST framework para desenvolver este API porque o mesmo é acoplado ao django, dessa forma as validações dos valores dos campos ficam por canto do django.
+  Conta-se com grande poder do django e do django REST framework para criar apps e APIs de qualquer complexidade.
+
+  Este par permite criar API com rapidez (não foi no meu caso, mas teria sido sim, se tivesse 100% dedicado a isso), segurança, escalabilidade e performance.
+
+  Outro motivo é porque trata-se de tecnologias modernas amplamente utilizadas em grandes, médias e peguenase empresas ( vê-se pelas vagas no Linkedin e outros sires de emprego).
+
+  Defini 2 produtos: DIAMANTE e OURO
+  Apliquei o desconto por produto:
+
+      DISCOUNT = {
+          'DIAMANTE': 5,  # 5%
+          'OURO': 3       # 3%
+      }
+
+
 ## STEPS TO RUN THIS APP LOCALY
 
 ### 0 | Clone the remote repository to start testing
