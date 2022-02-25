@@ -104,9 +104,9 @@ If you are using fish, write
           },
           "total": "108",
           "product": [
-             {
+            {
                 "productCode": "96321"
-             },
+            },
 		      	{
 		      		 "productCode": "9874"
 		      	},
@@ -131,8 +131,10 @@ If you are using fish, write
   3 - Draw.oi
 
     To create UML for this API , I used draw.io app.
-    Access this app here https://app.diagrams.net/
+    Access this app below
+
+    Link:  https://app.diagrams.net/
 
   4 - Django CPF validation
 
-    link : https://pypi.org/project/django-cpf/
+    Link : https://pypi.org/project/django-cpf/
