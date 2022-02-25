@@ -1,6 +1,6 @@
 # MaisTODOS Wallet API
 
-This is the thecnical challenge for join MaisTODOS company as a Dev. It consist in build a intermediate API to calcule cashback.
+This is the technical challenge for join MaisTODOS company as a Dev. It consist in build a intermediate API to calcule cashback.
 
 ## STEPS TO RUN THIS APP LOCALY
 
