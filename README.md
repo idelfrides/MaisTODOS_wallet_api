@@ -65,7 +65,7 @@ If you are using fish, write
 
     BY REQUEST ON CUSTOMER:
 
-     - ENDPOINT: "http://127.0.0.1:8000/wallet/api/v1/customer/",
+     - ENDPOINT: http://127.0.0.1:8000/wallet/api/v1/customer/
      - Method: POST
      - To know fields , performe OPTIONS request on that endpoint, then you can make a POST request
      - Body:
@@ -77,14 +77,13 @@ If you are using fish, write
 
     BY REQUEST ON PRODUCT:
 
-     - ENDPOINT: "http://127.0.0.1:8000/wallet/api/v1/product/",
+     - ENDPOINT: http://127.0.0.1:8000/wallet/api/v1/product/
      - Method: POST
      - To know fields, performe OPTIONS request on that endpoint, then you can make a POST request
      - Body:
      {
        "field": "value", ...
      }
-
 
 
 ### 11 | Now you can performe cashback request to API. See an example:
