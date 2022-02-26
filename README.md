@@ -103,6 +103,10 @@ If you are using fish, write
        "field": "value", ...
      }
 
+     
+     Browseble API 
+     Link:  https://www.django-rest-framework.org/
+     
 
 ### 11 | Now you can performe cashback request to API. See an example:
 
