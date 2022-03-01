@@ -138,7 +138,8 @@ If you are using fish, write
           ]
         }
 
-### 12 | WARNING:  document and productCode values have to be one of customer/product you created at STEP 10.
+### 12 | WARNING:  
+	'document' and 'productCode' values have to be one of customer/product you created at STEP 10.
 
 ### REFERENCES/TOOLS OR SITES
 
